@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Dtwitter</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+  <header>
+    
+    <h1><%= link_to 'ほ〜む', root_path %></h1>
+    <ul>
+      <li><%= link_to 'いまなにしてる〜？', new_tweet_path %></li>
+    </ul>
+  </header>
+
+  
+
+<%= yield %>
+
+</body>
+</html>
